@@ -1,0 +1,414 @@
+@charset "UTF-8";
+/* 
+  Aplica modelo de caja. 
+  border-box a todos los elementos.
+  Al modificar el tamaño de los elementos se modifica el contenido en su interior.
+*/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* ##### Estilos para mobile first ##### */
+/* 
+  A los 320px===>
+  Botones de la barra de navegacion que ocupan el ancho de la pantalla
+  El contenido de las demas secciones, Acerca de mi, Servicios y Contacto estan dispuestas para que ocupen el ancho de la pantalla, en solo una columna
+  Imagenes de los servicios ocupan el ancho de la columna
+  La seccion de los datos de contacto es pequeña
+*/
+/* 
+  Estilo para el cuerpo de la pagina, en general.
+  Se establece texto alineado al centro, fuente de la letra, margin, padding. 
+*/
+body {
+  background-color: #e6e5f0;
+  font-size: 12px;
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+ "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin: 15px;
+  border: gray 2px solid;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* ##### Estilos para mobile first ##### */
+/* 
+  A los 320px===>
+  Botones de la barra de navegacion que ocupan el ancho de la pantalla
+  El contenido de las demas secciones, Acerca de mi, Servicios y Contacto estan dispuestas para que ocupen el ancho de la pantalla, en solo una columna
+  Imagenes de los servicios ocupan el ancho de la columna
+  La seccion de los datos de contacto es pequeña
+*/
+/*
+  Estilo para el bloque header.
+  Estilo para el elemento de la imagen de fondo del header.
+*/
+.header__imagen {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 15px;
+}
+
+/*
+  Estilo para el bloque Headernav.
+  Aplica display en grilla, pero en solo una columna.    
+*/
+.headernav {
+  display: -ms-grid;
+  display: grid;  
+}
+
+/*
+  Estilo para el bloque Headernav.
+  Aplica estilo al elemento link del headernav (boton con fondo negro y letras blancas).
+*/
+.headernav__link {
+  background-color: #29292c;
+  color: white;
+  padding: 5px;
+  /* Espacio entre letra y borde del boton */
+  margin: 2px;
+  /* Espacio entre botones */
+  text-decoration: none;
+  /* Quita la linea debajo del vinculo */
+  font-size: 18px;
+  font-weight: bold;
+  /* Ancho de la letra tipo negrita */
+  border-radius: 5px;
+  /* Borde redondeado del boton */
+}
+
+/* 
+  Estilo para el bloque header.
+  Aplica estilo para el elemento hero del header (imagen de fondo).
+*/
+.header__hero {
+  background-image: url(../img/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 250px;
+  position: relative;
+  border-radius: 15px;
+}
+
+/* 
+  Estilo para el bloque Headerhero.
+  Aplica estilo de opacidad a la imagen de fondo.
+*/
+.headerhero {
+  padding: 5px;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 15px;
+}
+
+/* 
+  Estilo para el bloque Headerhero.
+  Aplica estilo al elemento titulo del Headerhero (tamaño y color de la letra).
+*/
+.headerhero__titulo {
+  font-size: 20px;
+  color: white;
+}
+
+/* 
+  Estilo para el bloque Acercademi.
+  Aplica estilo a la imagen del elemento acercademi__imagen.
+*/
+.acercademi__imagen img {
+  margin-top: 15px;
+  width: 45%;
+  border-radius: 15px;
+}
+
+/*
+  Estilo para el bloque Acercademi.
+  Aplica estilo al contenido de Acercademi (espacio y alineacion al texto).
+*/
+.acercademi__contenido {
+  padding: 15px;
+  text-align: justify;
+}
+
+/* 
+  Estilos para el bloque Servicios.
+  Aplica estilo al elemento contenido (espacio y alineacion al texto).
+*/
+.servicios_contenido {
+  padding: 15px;
+  text-align: justify;
+}
+
+/* 
+  Estilos para el bloque Servicios.
+  Aplica estilo a las imagenes.
+*/
+.servicios_contenido img {
+  width: 245px;
+  height: 160px;
+  border-radius: 15px;
+}
+
+/* 
+  Estilos para el bloque contacto.
+  Aplica estilo para elemento formulario (color de fondo, imagen de fondo, alineacion del texto y borde).
+*/
+.contacto__formulario {
+  background-color: #7798f3;
+  background-image: url(../img/Contacto.webp);
+  background-repeat: no-repeat;
+  background-position: 95%;
+  padding: 25px;
+  text-align: left;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 15px;
+}
+
+/* 
+  Estilos para el bloque contacto.  
+  Aplica estilo para elemento formulario.
+  Modifica color de fondo, tamaño del texto y borde en la leyenda del fieldset.
+*/
+.contacto__formulario--legend {
+  font-size: 20px;
+  background-color: #50ddd1;
+  border-radius: 5px;
+}
+
+/* 
+  Estilos para el bloque contacto.  
+  Aplica estilo para elemento formulario.
+  Se establece tamaño de la letra y ancho para los inputs.
+*/
+.contacto__formulario input {
+  font-size: 15px;
+  width: 100%;
+}
+
+/* 
+  Estilos para el bloque contacto.  
+  Aplica estilo para elemento formulario.
+  Se establece tamaño de la letra y ancho para los textarea.
+*/
+.contacto__formulario textarea {
+  font-size: 15px;
+  height: 50px;
+  width: 100%;
+}
+
+/* 
+  Estilos para el bloque contacto.  
+  Aplica estilo para elemento formulario.
+  Se establece estilos para los buttons.
+*/
+.contacto__formulario button {
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 5px;
+  /* Espacio entre letra y borde del boton */
+  margin-top: 15px;
+  /* Espacio entre botones */
+  font-size: 18px;
+  font-weight: bold;
+  /* Ancho de la letra tipo negrita */
+  border-radius: 5px;
+  /* Borde redondeado del boton */
+}
+
+/* 
+  Estilos para el bloque contacto. 
+  Aplica estilo para el eñemento datos de contacto (imagen de fondo).
+*/
+.contacto__datos {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  background-image: url(../img/Ubicacion.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px;
+}
+
+/* 
+  Estilo para el bloque Contactodatos.
+  Aplica estilos de opacidad para el contenido.
+*/
+.contactodatos {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 15px;
+  font-size: 10px;
+  color: white;
+}
+
+/* 
+  Estilo para el bloque Contactodatos..
+  Aplica estilo para la lista.
+*/
+.contactodatos ul {
+  list-style: none;
+}
+
+/* 
+  Estilos para el bloque Footer.
+  Aplica margen superior, tamaño y grosor de la letra.
+*/
+.footer {
+  margin-top: 15px;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+/* 
+  Estilos para el bloque Footernav.
+  Aplica estilos a los elementos link de footernav.
+*/
+.footernav__link {
+  color: black;
+  text-decoration: none;
+  padding: 2px;
+  border-radius: 2px;
+}
+
+/* 
+  ############### Media Queris ###############  
+*/
+/* 
+  Medida para 768px iPad ===>
+    Botones de la barra de navegacion ocupan una grilla con 4 columnas
+    El contenido de las demas secciones, Acerca de mi, Servicios y Contacto estan dispuestas para que ocupen el ancho de la pantalla, en solo una columna
+    Imagenes de los servicios ocupan una parte de la columna    
+*/
+@media only screen and (min-width: 768px) {
+  /* 
+  Estilo para el cuerpo de la pagina, en general.
+  Se re-establece tamaño de la letra. 
+*/
+body {
+    font-size: 17px;
+}
+
+/*
+  Estilo para el bloque headernav.
+  Estilo para el elemento nav del header.
+*/ 
+.headernav {
+    display: -ms-grid;
+    display: grid;    
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* 
+  Estilo para el bloque Headerhero.
+  Aplica estilo al elemento titulo del Headerhero (se re-establece tamaño de la letra). 
+*/
+.headerhero__titulo {
+    font-size: 28px;
+}
+
+/* 
+  Estilos para el bloque contacto.
+  Se aplica estilo para el elemento formulario (se re-establece ancho de los inputs).
+*/
+ .contacto__formulario input {
+    width: 75%;
+}
+
+/* 
+  Estilos para el bloque contacto.
+  Se aplica estilo para el elemento formulario (se re-establece ancho de los textarea).
+*/
+.contacto__formulario textarea {
+    width: 75%;
+}
+
+/* 
+  Estilos para el bloque contacto.
+  Se aplica estilo para el elemento formulario (se re-establece ancho del boton).
+*/
+.contacto__formulario button {
+    width: 75%;
+}
+
+/* 
+  Estilos para el bloque Footer.
+  Se re-establece tamaño de la letra.
+*/
+.footer {
+    font-size: 15px;
+}
+
+}
+
+/* 
+  Medida para 1200px PC ===>
+  Botones de la barra de navegacion ocupan una grilla con 4 columnas
+  El contenido de las demas secciones, Acerca de mi, Servicios y Contacto estan dispuestas para que ocupen una grilla con 2 columnas
+  Imagenes de los servicios ocupan una parte de la columna
+  La seccion de los datos de contacto tiene el mismo tamaño que el formulario de contacto
+*/
+@media only screen and (min-width: 1200px) {
+/* 
+  Estilo para los bloques acerca de mi, servicios y contacto. 
+  Se re-establece display en grilla, en 2 columnas.    
+*/
+.acercademi, .servicios, .contacto {
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* 
+  Estilo para el elemento acercademi_imagen.
+  Re-establece posicion de la imagen de perfil.
+*/
+.acercademi__imagen {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    /*Alineacion vertical*/
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    /*Alineacion horizontal*/
+}
+
+/*
+  Se establece margen para los elementos de formulario y datos de contacto.
+*/
+.contacto__formulario, .contacto__datos {
+    margin: 15px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

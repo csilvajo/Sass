@@ -1,0 +1,37 @@
+/* 
+  Medida para 1200px PC ===>
+  Botones de la barra de navegacion ocupan una grilla con 4 columnas
+  El contenido de las demas secciones, Acerca de mi, Servicios y Contacto estan dispuestas para que ocupen una grilla con 2 columnas
+  Imagenes de los servicios ocupan una parte de la columna
+  La seccion de los datos de contacto tiene el mismo tamaño que el formulario de contacto
+*/
+@media only screen and (min-width: 1200px) {
+
+    /* 
+      Estilo para los bloques acerca de mi, servicios y contacto. 
+      Se re-establece display en grilla, en 2 columnas.    
+    */
+    .acercademi, .servicios, .contacto{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* 
+      Estilo para el elemento acercademi_imagen.
+      Re-establece posicion de la imagen de perfil.
+    */
+    .acercademi__imagen {  
+      display: flex;
+      align-items: center; /*Alineacion vertical*/
+      justify-content: center; /*Alineacion horizontal*/
+    }
+    
+    /*
+      Se establece margen para los elementos de formulario y datos de contacto.
+    */
+    .contacto__formulario, .contacto__datos{
+      margin: 15px;
+    }
+    
+    }
+    

@@ -1,0 +1,74 @@
+/* 
+  ############### Media Queris ###############  
+*/
+
+/* 
+  Medida para 768px iPad ===>
+    Botones de la barra de navegacion ocupan una grilla con 4 columnas
+    El contenido de las demas secciones, Acerca de mi, Servicios y Contacto estan dispuestas para que ocupen el ancho de la pantalla, en solo una columna
+    Imagenes de los servicios ocupan una parte de la columna    
+*/
+@media only screen and (min-width: 768px) {
+/* 
+  Estilo para el cuerpo de la pagina, en general.
+  Se re-establece tamaño de la letra. 
+*/
+body {
+  font-size: 17px;
+}
+
+/*
+  Estilo para el bloque header.
+  Estilo para el elemento nav del header.
+*/
+.header__nav
+
+/*
+  Estilo para el bloque Headernav.
+  Se aplica display en grilla, 4 columnas.    
+*/
+.headernav {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* 
+  Estilo para el bloque Headerhero.
+  Aplica estilo al elemento titulo del Headerhero (se re-establece tamaño de la letra). 
+*/
+.headerhero__titulo {
+  font-size: 28px;
+}
+
+/* 
+  Estilos para el bloque contacto.
+  Se aplica estilo para el elemento formulario (se re-establece ancho de los inputs).
+*/
+.contacto__formulario input {  
+  width: 75%;
+}
+
+/* 
+  Estilos para el bloque contacto.
+  Se aplica estilo para el elemento formulario (se re-establece ancho de los textarea).
+*/
+.contacto__formulario textarea { 
+  width: 75%;
+}
+
+/* 
+  Estilos para el bloque contacto.
+  Se aplica estilo para el elemento formulario (se re-establece ancho del boton).
+*/
+.contacto__formulario button {
+   width: 75%;
+}
+
+/* 
+  Estilos para el bloque Footer.
+  Se re-establece tamaño de la letra.
+*/
+.footer {
+  font-size: 15px;
+}
+}

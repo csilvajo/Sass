@@ -1,0 +1,84 @@
+/* ##### Estilos para mobile first ##### */
+/* 
+  A los 320px===>
+  Botones de la barra de navegacion que ocupan el ancho de la pantalla
+  El contenido de las demas secciones, Acerca de mi, Servicios y Contacto estan dispuestas para que ocupen el ancho de la pantalla, en solo una columna
+  Imagenes de los servicios ocupan el ancho de la columna
+  La seccion de los datos de contacto es pequeña
+*/
+
+/*
+  Estilo para el bloque header.
+  Estilo para el elemento de la imagen de fondo del header.
+*/
+.header__imagen {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 15px;
+}
+
+/*
+  Estilo para el bloque Headernav.
+  Aplica display en grilla, pero en solo una columna.    
+*/
+.headernav {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+/*
+  Estilo para el bloque Headernav.
+  Aplica estilo al elemento link del headernav (boton con fondo negro y letras blancas).
+*/
+.headernav__link {
+  background-color: rgb(41, 41, 44);
+  color: white;
+  padding: 5px; /* Espacio entre letra y borde del boton */
+  margin: 2px; /* Espacio entre botones */ 
+  text-decoration: none; /* Quita la linea debajo del vinculo */
+  font-size: 18px;
+  font-weight: bold; /* Ancho de la letra tipo negrita */
+  border-radius: 5px; /* Borde redondeado del boton */
+}
+
+/* 
+  Estilo para el bloque header.
+  Aplica estilo para el elemento hero del header (imagen de fondo).
+*/
+.header__hero {
+  background-image: url(../img/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 250px;
+  position: relative;
+  border-radius: 15px;
+}
+
+/* 
+  Estilo para el bloque Headerhero.
+  Aplica estilo de opacidad a la imagen de fondo.
+*/
+.headerhero {
+  padding: 5px;
+  position: absolute;  
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 15px;
+}
+
+/* 
+  Estilo para el bloque Headerhero.
+  Aplica estilo al elemento titulo del Headerhero (tamaño y color de la letra).
+*/
+.headerhero__titulo {
+  font-size: 20px;
+  color: white;
+}
+
+
+
+

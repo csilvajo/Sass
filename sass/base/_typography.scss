@@ -1,0 +1,33 @@
+/* 
+  Aplica modelo de caja. 
+  border-box a todos los elementos.
+  Al modificar el tamaño de los elementos se modifica el contenido en su interior.
+*/
+* {
+  box-sizing: border-box;
+}
+
+/* ##### Estilos para mobile first ##### */
+/* 
+  A los 320px===>
+  Botones de la barra de navegacion que ocupan el ancho de la pantalla
+  El contenido de las demas secciones, Acerca de mi, Servicios y Contacto estan dispuestas para que ocupen el ancho de la pantalla, en solo una columna
+  Imagenes de los servicios ocupan el ancho de la columna
+  La seccion de los datos de contacto es pequeña
+*/
+
+/* 
+  Estilo para el cuerpo de la pagina, en general.
+  Se establece texto alineado al centro, fuente de la letra, margin, padding. 
+*/
+body {
+  background-color: rgb(230, 229, 240);
+  font-size: 12px;
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin: 15px;
+  border: gray 2px solid;
+  border-radius: 10px;
+  padding: 10px;
+}

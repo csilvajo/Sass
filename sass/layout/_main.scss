@@ -1,0 +1,141 @@
+
+/* 
+  Estilo para el bloque Acercademi.
+  Aplica estilo a la imagen del elemento acercademi__imagen.
+*/
+.acercademi__imagen img {
+    margin-top: 15px;
+    width: 45%;
+    border-radius: 15px;
+}
+
+/*
+  Estilo para el bloque Acercademi.
+  Aplica estilo al contenido de Acercademi (espacio y alineacion al texto).
+*/
+.acercademi__contenido {
+    padding: 15px;
+    text-align: justify;
+}
+
+/* 
+  Estilos para el bloque Servicios.
+  Aplica estilo al elemento contenido (espacio y alineacion al texto).
+*/
+.servicios_contenido {
+    padding: 15px;
+    text-align: justify;
+}
+
+/* 
+  Estilos para el bloque Servicios.
+  Aplica estilo a las imagenes.
+*/
+.servicios_contenido img {
+    width: 245px;
+    height: 160px;
+    border-radius: 15px;
+}
+
+/* 
+  Estilos para el bloque contacto.
+  Aplica estilo para elemento formulario (color de fondo, imagen de fondo, alineacion del texto y borde).
+*/
+.contacto__formulario {
+    background-color: rgb(119, 152, 243);
+    background-image: url(../img/Contacto.webp);
+    background-repeat: no-repeat;
+    background-position: 95%;
+    padding: 25px;
+    text-align: left;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+/* 
+  Estilos para el bloque contacto.  
+  Aplica estilo para elemento formulario.
+  Modifica color de fondo, tamaño del texto y borde en la leyenda del fieldset.
+*/
+.contacto__formulario--legend {
+    font-size: 20px;
+    background-color: rgb(80, 221, 209);
+    border-radius: 5px;
+}
+
+/* 
+  Estilos para el bloque contacto.  
+  Aplica estilo para elemento formulario.
+  Se establece tamaño de la letra y ancho para los inputs.
+*/
+.contacto__formulario input {
+    font-size: 15px;
+    width: 100%;
+}
+
+/* 
+  Estilos para el bloque contacto.  
+  Aplica estilo para elemento formulario.
+  Se establece tamaño de la letra y ancho para los textarea.
+*/
+.contacto__formulario textarea {
+    font-size: 15px;
+    height: 50px;
+    width: 100%;
+}
+  
+/* 
+  Estilos para el bloque contacto.  
+  Aplica estilo para elemento formulario.
+  Se establece estilos para los buttons.
+*/
+.contacto__formulario button {
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 5px; /* Espacio entre letra y borde del boton */
+    margin-top: 15px; /* Espacio entre botones */
+    font-size: 18px;
+    font-weight: bold; /* Ancho de la letra tipo negrita */
+    border-radius: 5px; /* Borde redondeado del boton */
+}
+
+/* 
+  Estilos para el bloque contacto. 
+  Aplica estilo para el eñemento datos de contacto (imagen de fondo).
+*/
+.contacto__datos {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  background-image: url(../img/Ubicacion.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px;
+}
+
+/* 
+  Estilo para el bloque Contactodatos.
+  Aplica estilos de opacidad para el contenido.
+*/
+.contactodatos {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.5);  
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: center;
+  border-radius: 15px;
+  font-size: 10px;
+  color: white;
+}
+
+/* 
+  Estilo para el bloque Contactodatos..
+  Aplica estilo para la lista.
+*/
+.contactodatos ul {
+  list-style: none;
+}
